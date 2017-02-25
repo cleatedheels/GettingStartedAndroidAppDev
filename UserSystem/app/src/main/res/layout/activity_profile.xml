@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="com.example.haseeb.usersystem.ProfileActivity">
+
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:adjustViewBounds="true"
+    android:id="@+id/imageview_profile"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="32dp"
+    android:src="@mipmap/ic_launcher" />
+
+<TextView
+    android:id="@+id/textview_username"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:text="Username : John Doe"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:layout_below="@+id/imageview_profile"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp" />
+
+<TextView
+    android:id="@+id/textview_email"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:text="Email : johnDoe@ex.com"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:layout_below="@+id/textview_username"
+    android:layout_centerHorizontal="true"
+    />
+
+<TextView
+    android:id="@+id/textview_gender"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:text="Gender : Male"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:layout_below="@+id/textview_email"
+    android:layout_centerHorizontal="true"
+    />
+
+<Switch
+    android:id="@+id/switch_newsletter"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:text="Newsletter subscription"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"
+    android:layout_below="@+id/textview_gender"
+    />
+
+<Switch
+    android:id="@+id/switch_allow_email"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:text="Allow email from other"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"
+    android:layout_below="@+id/switch_newsletter"
+    />
+
+</RelativeLayout>
